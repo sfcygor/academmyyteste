@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[NOME_DA_ACADEMIA] — Jiu-Jitsu Premium | Agende sua Aula Experimental</title>
+    <title>The Lion — Jiu-Jitsu Premium | Agende sua Aula Experimental</title>
+
+    <link rel="icon" type="image/png" href="img/logo/70x70resizer.png">
+
     <meta name="description"
         content="Aprenda Jiu-Jitsu com os melhores professores em [NOME_DA_ACADEMIA]. Metodologia segura e progressiva para todas as idades e níveis. Agende sua aula experimental gratuita hoje mesmo!">
     <meta name="robots" content="index, follow">
@@ -12,14 +15,14 @@
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.suaacademia.com.br/">
-    <meta property="og:title" content="[NOME_DA_ACADEMIA] — Jiu-Jitsu Premium | Agende sua Aula Experimental">
+    <meta property="og:title" content="The Lion — Jiu-Jitsu Premium | Agende sua Aula Experimental">
     <meta property="og:description"
         content="Aprenda Jiu-Jitsu com os melhores professores em [NOME_DA_ACADEMIA]. Metodologia segura e progressiva para todas as idades e níveis. Agende sua aula experimental gratuita hoje mesmo!">
     <meta property="og:image" content="https://www.suaacademia.com.br/assets/social-image.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://www.suaacademia.com.br/">
-    <meta name="twitter:title" content="[NOME_DA_ACADEMIA] — Jiu-Jitsu Premium | Agende sua Aula Experimental">
+    <meta name="twitter:title" content="The Lion — Jiu-Jitsu Premium | Agende sua Aula Experimental">
     <meta name="twitter:description"
         content="Aprenda Jiu-Jitsu com os melhores professores em [NOME_DA_ACADEMIA]. Metodologia segura e progressiva para todas as idades e níveis. Agende sua aula experimental gratuita hoje mesmo!">
     <meta name="twitter:image" content="https://www.suaacademia.com.br/assets/social-image.jpg">
@@ -83,7 +86,7 @@
     <header class="header">
         <div class="container nav">
             <a href="#" class="nav-logo" aria-label="Voltar para o início">
-                [NOME_DA_ACADEMIA]
+                <img src="img/logo/lionssvg.svg" alt="Logo da Academia [NOME_DA_ACADEMIA]">
             </a>
             <nav>
                 <ul class="nav-list" role="list">
@@ -105,6 +108,7 @@
     <main>
         <section id="hero" class="hero">
             <div class="hero-bg-liquid"></div>
+            <div class="hero-bg-image"></div>
             <div class="container hero-content">
                 <h1 class="hero-title">
                     Jiu-Jitsu para todos os níveis.
@@ -129,14 +133,14 @@
                 <h2 class="section-title">Aprenda a arte suave, transforme sua vida.</h2>
                 <div class="benefits-grid">
                     <div class="benefit-card js-fade-in">
-                        <img src="img/icones/condi.png" alt="Ícone de um braço forte"
-                            width="64" height="64" loading="lazy">
+                        <img src="img/icones/condi.png" alt="Ícone de um braço forte" width="64" height="64"
+                            loading="lazy">
                         <h3>Condicionamento Físico</h3>
                         <p>Aprimore sua força, resistência e flexibilidade em treinos dinâmicos e completos.</p>
                     </div>
                     <div class="benefit-card js-fade-in" style="transition-delay: 100ms;">
-                        <img src="img/icones/unnamed-removebg-preview.png" alt="Ícone de um cérebro"
-                            width="64" height="64" loading="lazy">
+                        <img src="img/icones/unnamed-removebg-preview.png" alt="Ícone de um cérebro" width="64"
+                            height="64" loading="lazy">
                         <h3>Saúde Mental</h3>
                         <p>Reduza o estresse e aumente o foco com a prática do Jiu-Jitsu, uma verdadeira meditação em
                             movimento.</p>
@@ -163,8 +167,7 @@
                 <h2 class="section-title">Nossa equipe de professores.</h2>
                 <div class="professors-grid">
                     <div class="professor-card owner-card js-fade-in">
-                        <img class="professor-photo"
-                            src="img/profs/dono3.png"
+                        <img class="professor-photo" src="img/profs/dono3.png"
                             alt="Foto de Sensei Carlos Oliveira, faixas preta" loading="lazy">
                         <div class="professor-info">
                             <h3 class="professor-name">Sensei Carlos Oliveira</h3>
@@ -173,8 +176,7 @@
                         </div>
                     </div>
                     <div class="professor-card js-fade-in" style="transition-delay: 100ms;">
-                        <img class="professor-photo"
-                            src="img/profs/profaaa.png"
+                        <img class="professor-photo" src="img/profs/profaaa.png"
                             alt="Foto de Profa. Ana Santos, faixa preta" loading="lazy">
                         <div class="professor-info">
                             <h3 class="professor-name">Profa. Ana Santos</h3>
@@ -183,8 +185,7 @@
                         </div>
                     </div>
                     <div class="professor-card js-fade-in" style="transition-delay: 200ms;">
-                        <img class="professor-photo"
-                            src="img/profs/profe.png"
+                        <img class="professor-photo" src="img/profs/profe.png"
                             alt="Foto de Coach Rafael Lima, faixa marrom" loading="lazy">
                         <div class="professor-info">
                             <h3 class="professor-name">Coach Rafael Lima</h3>
@@ -196,74 +197,148 @@
             </div>
         </section>
 
-        <section id="horarios" class="schedule">
+        <section id="historia" class="history">
             <div class="container">
-                <h2 class="section-title">Nossos horários de treino.</h2>
-                <div class="schedule-table-container js-fade-in">
-                    <table class="schedule-table">
-                        <thead>
-                            <tr>
-                                <th>Dia da Semana</th>
-                                <th>Horário</th>
-                                <th>Nível</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Segunda-feira</td>
-                                <td>07:00 - 08:30</td>
-                                <td>Iniciante</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>19:00 - 20:30</td>
-                                <td>Todos os Níveis</td>
-                            </tr>
-                            <tr>
-                                <td>Terça-feira</td>
-                                <td>07:00 - 08:30</td>
-                                <td>Todos os Níveis</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>19:00 - 20:30</td>
-                                <td>Avançado</td>
-                            </tr>
-                            <tr>
-                                <td>Quarta-feira</td>
-                                <td>07:00 - 08:30</td>
-                                <td>Iniciante</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>19:00 - 20:30</td>
-                                <td>Todos os Níveis</td>
-                            </tr>
-                            <tr>
-                                <td>Quinta-feira</td>
-                                <td>07:00 - 08:30</td>
-                                <td>Todos os Níveis</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>19:00 - 20:30</td>
-                                <td>Avançado</td>
-                            </tr>
-                            <tr>
-                                <td>Sexta-feira</td>
-                                <td>19:00 - 20:30</td>
-                                <td>Aberto (Rola)</td>
-                            </tr>
-                            <tr>
-                                <td>Sábado</td>
-                                <td>10:00 - 11:30</td>
-                                <td>Kids & Iniciantes</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="history-content js-fade-in">
+                    <div class="history-image">
+                        <img src="img/histo/hist.png" alt="Imagem histórica da academia [NOME_DA_ACADEMIA]">
+                    </div>
+                    <div class="history-text">
+                        <h2 class="section-title">Nossa História</h2>
+                        <p>
+                            Fundada em <strong>2019</strong> pelo Sensei Carlos Oliveira, a
+                            The Lion nasceu de um sonho: criar um espaço onde a arte do Jiu-Jitsu pudesse ser
+                            ensinada com respeito, técnica e um forte senso de comunidade.
+                        </p>
+                        <p>
+                            O que começou com um pequeno grupo de alunos apaixonados em um tatame modesto, hoje se
+                            tornou uma das academias mais respeitadas da região. Ao longo dos anos, formamos campeões,
+                            ajudamos pessoas a transformar suas vidas e, o mais importante, construímos uma família
+                            unida pela paixão pela arte suave.
+                        </p>
+                        <p>
+                            Nossa missão continua a mesma: oferecer um ambiente seguro e inspirador para que todos, de
+                            crianças a adultos, possam descobrir sua força e evoluir dentro e fora dos tatames.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <section id="horarios" class="schedule">
+            <div class="container">
+                <h2 class="section-title">Nossos horários de treino.</h2>
+
+                <div class="schedule-container js-fade-in">
+                    <div class="schedule-tabs" role="tablist" aria-label="Grade de Horários">
+                        <button role="tab" aria-selected="true" aria-controls="panel-seg" id="tab-seg"
+                            class="schedule-tab active">Seg</button>
+                        <button role="tab" aria-selected="false" aria-controls="panel-ter" id="tab-ter"
+                            class="schedule-tab">Ter</button>
+                        <button role="tab" aria-selected="false" aria-controls="panel-qua" id="tab-qua"
+                            class="schedule-tab">Qua</button>
+                        <button role="tab" aria-selected="false" aria-controls="panel-qui" id="tab-qui"
+                            class="schedule-tab">Qui</button>
+                        <button role="tab" aria-selected="false" aria-controls="panel-sex" id="tab-sex"
+                            class="schedule-tab">Sex</button>
+                        <button role="tab" aria-selected="false" aria-controls="panel-sab" id="tab-sab"
+                            class="schedule-tab">Sáb</button>
+                    </div>
+
+                    <div class="schedule-panels">
+                        <div id="panel-seg" role="tabpanel" tabindex="0" aria-labelledby="tab-seg"
+                            class="schedule-panel active">
+                            <div class="class-item">
+                                <span class="class-time">07:00 - 08:30</span>
+                                <span class="class-details">
+                                    <span class="class-level iniciante"></span>
+                                    Iniciante
+                                </span>
+                            </div>
+                            <div class="class-item">
+                                <span class="class-time">19:00 - 20:30</span>
+                                <span class="class-details">
+                                    <span class="class-level todos"></span>
+                                    Todos os Níveis
+                                </span>
+                            </div>
+                        </div>
+                        <div id="panel-ter" role="tabpanel" tabindex="0" aria-labelledby="tab-ter"
+                            class="schedule-panel">
+                            <div class="class-item">
+                                <span class="class-time">07:00 - 08:30</span>
+                                <span class="class-details">
+                                    <span class="class-level todos"></span>
+                                    Todos os Níveis
+                                </span>
+                            </div>
+                            <div class="class-item">
+                                <span class="class-time">19:00 - 20:30</span>
+                                <span class="class-details">
+                                    <span class="class-level avancado"></span>
+                                    Avançado
+                                </span>
+                            </div>
+                        </div>
+                        <div id="panel-qua" role="tabpanel" tabindex="0" aria-labelledby="tab-qua"
+                            class="schedule-panel">
+                            <div class="class-item">
+                                <span class="class-time">07:00 - 08:30</span>
+                                <span class="class-details">
+                                    <span class="class-level iniciante"></span>
+                                    Iniciante
+                                </span>
+                            </div>
+                            <div class="class-item">
+                                <span class="class-time">19:00 - 20:30</span>
+                                <span class="class-details">
+                                    <span class="class-level todos"></span>
+                                    Todos os Níveis
+                                </span>
+                            </div>
+                        </div>
+                        <div id="panel-qui" role="tabpanel" tabindex="0" aria-labelledby="tab-qui"
+                            class="schedule-panel">
+                            <div class="class-item">
+                                <span class="class-time">07:00 - 08:30</span>
+                                <span class="class-details">
+                                    <span class="class-level todos"></span>
+                                    Todos os Níveis
+                                </span>
+                            </div>
+                            <div class="class-item">
+                                <span class="class-time">19:00 - 20:30</span>
+                                <span class="class-details">
+                                    <span class="class-level avancado"></span>
+                                    Avançado
+                                </span>
+                            </div>
+                        </div>
+                        <div id="panel-sex" role="tabpanel" tabindex="0" aria-labelledby="tab-sex"
+                            class="schedule-panel">
+                            <div class="class-item">
+                                <span class="class-time">19:00 - 20:30</span>
+                                <span class="class-details">
+                                    <span class="class-level aberto"></span>
+                                    Aberto (Rola)
+                                </span>
+                            </div>
+                        </div>
+                        <div id="panel-sab" role="tabpanel" tabindex="0" aria-labelledby="tab-sab"
+                            class="schedule-panel">
+                            <div class="class-item">
+                                <span class="class-time">10:00 - 11:30</span>
+                                <span class="class-details">
+                                    <span class="class-level kids"></span>
+                                    Kids & Iniciantes
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <section id="planos" class="pricing">
             <div class="container">
@@ -287,43 +362,60 @@
             </div>
         </section>
 
-        <section id="galeria" class="gallery">
+        <section id="depoimentos" class="testimonials">
             <div class="container">
-                <h2 class="section-title">Nossa galeria de fotos.</h2>
-                <div class="gallery-grid js-fade-in">
-                    <a href="https://via.placeholder.com/1200x800/E9E9E9/444444?text=Galeria+1" target="_blank"
-                        class="gallery-item">
-                        <img src="img/galeria/gal1.png"
-                            alt="Imagem da academia 1" loading="lazy">
-                    </a>
-                    <a href="https://via.placeholder.com/1200x800/E9E9E9/444444?text=Galeria+2" target="_blank"
-                        class="gallery-item">
-                        <img src="https://via.placeholder.com/600x400/E9E9E9/444444?text=Galeria+2"
-                            alt="Imagem da academia 2" loading="lazy">
-                    </a>
-                    <a href="https://via.placeholder.com/1200x800/E9E9E9/444444?text=Galeria+3" target="_blank"
-                        class="gallery-item">
-                        <img src="https://via.placeholder.com/600x400/E9E9E9/444444?text=Galeria+3"
-                            alt="Imagem da academia 3" loading="lazy">
-                    </a>
-                    <a href="https://via.placeholder.com/1200x800/E9E9E9/444444?text=Galeria+4" target="_blank"
-                        class="gallery-item">
-                        <img src="https://via.placeholder.com/600x400/E9E9E9/444444?text=Galeria+4"
-                            alt="Imagem da academia 4" loading="lazy">
-                    </a>
-                    <a href="https://via.placeholder.com/1200x800/E9E9E9/444444?text=Galeria+5" target="_blank"
-                        class="gallery-item">
-                        <img src="https://via.placeholder.com/600x400/E9E9E9/444444?text=Galeria+5"
-                            alt="Imagem da academia 5" loading="lazy">
-                    </a>
-                    <a href="https://via.placeholder.com/1200x800/E9E9E9/444444?text=Galeria+6" target="_blank"
-                        class="gallery-item">
-                        <img src="https://via.placeholder.com/600x400/E9E9E9/444444?text=Galeria+6"
-                            alt="Imagem da academia 6" loading="lazy">
-                    </a>
+                <h2 class="section-title">O que nossos alunos dizem</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card js-fade-in">
+                        <img src="https://via.placeholder.com/80x80/cccccc/444444?text=Aluno"
+                            alt="Foto do Aluno João Silva" class="testimonial-photo">
+                        <p class="testimonial-quote">
+                            "A The Lions mudou minha vida. Encontrei uma família, melhorei meu condicionamento e aprendi
+                            a me defender. Os professores são incríveis!"
+                        </p>
+                        <cite class="testimonial-author">João Silva - Faixa Azul</cite>
+                    </div>
+                    <div class="testimonial-card js-fade-in" style="transition-delay: 100ms;">
+                        <img src="https://via.placeholder.com/80x80/cccccc/444444?text=Aluna"
+                            alt="Foto da Aluna Maria Souza" class="testimonial-photo">
+                        <p class="testimonial-quote">
+                            "Como mulher, eu buscava um ambiente seguro para treinar. Encontrei isso e muito mais aqui.
+                            Aulas técnicas e uma comunidade que te acolhe."
+                        </p>
+                        <cite class="testimonial-author">Maria Souza - Faixa Branca</cite>
+                    </div>
+                    <div class="testimonial-card js-fade-in" style="transition-delay: 200ms;">
+                        <img src="https://via.placeholder.com/80x80/cccccc/444444?text=Aluno"
+                            alt="Foto do Aluno Pedro Costa" class="testimonial-photo">
+                        <p class="testimonial-quote">
+                            "Para quem busca competir, o treino é de altíssimo nível. A atenção aos detalhes e a
+                            estratégia de luta são diferenciais claros."
+                        </p>
+                        <cite class="testimonial-author">Pedro Costa - Faixa Roxa</cite>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <section id="galeria" class="gallery">
+            <h2 class="section-title">Nossa galeria de fotos.</h2>
+            <div class="scroller" data-speed="slow">
+                <ul class="tag-list scroller__inner">
+                    <li><img src="img/galeria/gal1.png" alt="Imagem da academia 1"></li>
+                    <li><img src="https://via.placeholder.com/600x400/E9E9E9/444444?text=Galeria+2"
+                            alt="Imagem da academia 2"></li>
+                    <li><img src="https://via.placeholder.com/600x400/E9E9E9/444444?text=Galeria+3"
+                            alt="Imagem da academia 3"></li>
+                    <li><img src="https://via.placeholder.com/600x400/E9E9E9/444444?text=Galeria+4"
+                            alt="Imagem da academia 4"></li>
+                    <li><img src="https://via.placeholder.com/600x400/E9E9E9/444444?text=Galeria+5"
+                            alt="Imagem da academia 5"></li>
+                    <li><img src="https://via.placeholder.com/600x400/E9E9E9/444444?text=Galeria+6"
+                            alt="Imagem da academia 6"></li>
+                </ul>
+            </div>
+        </section>
+
 
         <section id="localizacao" class="location">
             <div class="container">
@@ -341,7 +433,7 @@
                     </div>
                     <div class="map-container js-fade-in" style="transition-delay: 100ms;">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.805825301825!2d-43.19796698495033!3d-22.920803982845248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f8c05282479%3A0x6a0a095b5e72d24a!2sRua%20do%20Ouvidor%2C%2089%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020040-050!5e0!3m2!1spt-BR!2sbr!4v1672345678901!5m2!1spt-BR!2sbr"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d866.8059932696574!2d-60.67365483266115!3d2.821540833288722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1756792499525!5m2!1spt-BR!2sbr"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -352,21 +444,56 @@
         <section id="contato" class="contact">
             <div class="container">
                 <h2 class="section-title">Fale conosco.</h2>
-                <form class="contact-form js-fade-in" action="[URL_DO_FORM_PROCESSADOR_DE_EMAIL]" method="POST">
-                    <div class="form-group">
-                        <label for="name">Nome Completo</label>
-                        <input type="text" id="name" name="name" required>
+                <div class="contact-wrapper js-fade-in">
+                    <div class="contact-info">
+                        <h3>Tem alguma dúvida?</h3>
+                        <p>Preencha o formulário ao lado ou entre em contato por um de nossos canais. Nossa equipe está
+                            pronta para te ajudar a dar o primeiro passo!</p>
+                        <p><strong>Whatsapp:</strong> [SEU WHATSAPP]</p>
+                        <p><strong>Email:</strong> [SEU EMAIL]</p>
                     </div>
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensagem</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="button button-primary">Enviar Mensagem</button>
-                </form>
+                    <form class="contact-form" action="[URL_DO_FORM_PROCESSADOR_DE_EMAIL]" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Nome Completo</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Mensagem</label>
+                        </div>
+                        <button type="submit" class="button button-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                <div class="faq-container js-fade-in">
+                    <details class="faq-item">
+                        <summary class="faq-question">Preciso ter experiência ou bom preparo físico para começar?
+                        </summary>
+                        <p class="faq-answer">De forma alguma! Nossas turmas de iniciantes são projetadas para ensinar
+                            os fundamentos do zero. O condicionamento físico você adquire aqui, no seu ritmo.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">O que preciso levar para a aula experimental?</summary>
+                        <p class="faq-answer">Apenas roupas de ginástica confortáveis (sem zíperes ou botões) e uma
+                            garrafa de água. Se você não tiver um quimono, nós emprestamos um para a sua primeira aula.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">Jiu-Jitsu é um ambiente seguro para mulheres?</summary>
+                        <p class="faq-answer">Com certeza. Prezamos por um ambiente de máximo respeito. Além disso,
+                            temos professoras e monitoras dedicadas, e o Jiu-Jitsu é uma das ferramentas de defesa
+                            pessoal mais eficazes para mulheres.</p>
+                    </details>
+                </div>
             </div>
         </section>
 
@@ -411,7 +538,7 @@
                 </a>
             </div>
             <p class="footer-legal">
-                &copy; 2024 [NOME_DA_ACADEMIA]. Todos os direitos reservados.
+                © 2024 [NOME_DA_ACADEMIA]. Todos os direitos reservados.
                 <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a>
             </p>
         </div>
