@@ -524,6 +524,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  align-items: center; /* Adicione esta linha */
+  flex-wrap: wrap; /* Garante que os cards quebrem a linha em telas pequenas */
 }
 
 .pricing-card {
@@ -863,10 +865,9 @@ body {
   text-decoration: underline;
 }
 
-/* ========== ESTILOS - SEÇÃO HISTÓRIA ========== */
 .history {
   padding: 5rem 0;
-  background-color: var(--color-white); /* Ou var(--color-light) se preferir */
+  background-color: var(--color-white);
 }
 
 .history-content {
@@ -901,7 +902,7 @@ body {
 }
 
 .history-text .section-title {
-  text-align: left; /* Alinha o título da seção à esquerda */
+  text-align: left;
   margin-bottom: 2rem;
 }
 
@@ -920,104 +921,133 @@ body {
   color: var(--color-black);
 }
 
-/* ========== CORREÇÃO DEFINITIVA PARA A LOGO NO HEADER ========== */
 .nav-logo {
   display: flex;
   align-items: center;
 }
 
 .nav-logo img {
-  /* Define a altura máxima da logo. Ajuste o valor como preferir */
-  max-height: 65px; 
-  width: auto; /* Mantém a proporção da imagem */
+  max-height: 65px;
+  width: auto;
 }
 
-/* ========== ESTILOS - SEÇÃO DEPOIMENTOS ========== */
 .testimonials {
-    padding: 5rem 0;
-    background-color: var(--color-light);
+  padding: 5rem 0;
+  background-color: var(--color-light);
 }
 
 .testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 .testimonial-card {
-    background-color: var(--color-white);
-    padding: 2.5rem;
-    border-radius: var(--radius-default);
-    box-shadow: var(--shadow-soft);
-    border: 1px solid var(--color-medium);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  background-color: var(--color-white);
+  padding: 2.5rem;
+  border-radius: var(--radius-default);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--color-medium);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .testimonial-photo {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-quote {
-    font-size: 1.1rem;
-    color: var(--color-dark);
-    font-style: italic;
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
-    flex-grow: 1; /* Garante que o texto ocupe o espaço e alinhe o autor */
+  font-size: 1.1rem;
+  color: var(--color-dark);
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
 }
 
 .testimonial-author {
-    font-weight: 700;
-    color: var(--color-black);
-    font-style: normal;
+  font-weight: 700;
+  color: var(--color-black);
+  font-style: normal;
 }
 
-/* ========== ESTILOS - SEÇÃO FAQ ========== */
 .faq {
-    padding: 5rem 0;
+  padding: 5rem 0;
 }
 .faq-container {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .faq-item {
-    border-bottom: 1px solid var(--color-medium);
-    padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-medium);
+  padding: 1.5rem 0;
 }
 .faq-question {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--color-black);
-    cursor: pointer;
-    list-style: none; /* Remove o marcador padrão */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-black);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .faq-question::-webkit-details-marker {
-    display: none; /* Remove o marcador no Chrome/Safari */
+  display: none;
 }
 .faq-question::after {
-    content: '+';
-    font-size: 2rem;
-    font-weight: 400;
-    color: var(--color-dark);
-    transition: transform 0.3s ease;
+  content: "+";
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-dark);
+  transition: transform 0.3s ease;
 }
 .faq-item[open] .faq-question::after {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .faq-answer {
-    color: var(--color-dark);
-    margin-top: 1rem;
-    line-height: 1.7;
-    animation: fadeIn 0.5s ease;
+  color: var(--color-dark);
+  margin-top: 1rem;
+  line-height: 1.7;
+  animation: fadeIn 0.5s ease;
+}
+
+.pricing-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-badge {
+  position: absolute;
+  top: 15px;
+  right: -30px;
+  background-color: var(--color-red-emphasis);
+  color: var(--color-white);
+  padding: 0.2rem 2.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transform: rotate(45deg);
+  transform-origin: 100% 0%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.pricing-card.popular {
+  border-color: var(--color-red-emphasis);
+  padding: 4rem 3rem;
+  transform: translateY(0);
+  box-shadow: 0 10px 40px rgba(204, 0, 0, 0.2), 0 5px 20px rgba(204, 0, 0, 0.1);
+}
+
+.pricing-card.popular:hover {
+  transform: translateY(-5px);
 }
